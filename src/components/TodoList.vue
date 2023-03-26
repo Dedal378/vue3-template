@@ -4,14 +4,12 @@ const todos = $ref([
   { id: 1, title: 'Finish work', done: false },
   { id: 2, title: 'Watch youtube', done: false }
 ])
-
 const toggleTodo = (id) => {
   const todo = todos.find((todo) => todo.id === id)
   if (todo) {
     todo.done = !todo.done
   }
 }
-
 const addTodo = (evt) => {
   const data = new FormData(evt.target)
 

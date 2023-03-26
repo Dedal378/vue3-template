@@ -32,9 +32,9 @@ module.exports = {
         'GLOBAL',
         ['UNIQUE', 'SLOT'],
         'TWO_WAY_BINDING',
+        'EVENTS',
         'OTHER_DIRECTIVES',
         'OTHER_ATTR',
-        'EVENTS',
         'CONTENT'
       ],
       alphabetical: false,

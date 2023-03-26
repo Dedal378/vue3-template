@@ -31,7 +31,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@formkit/auto-animate", "virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:1.0.0-pre-alpha.3"],\
             ["@vitejs/plugin-vue", "virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:4.0.0"],\
             ["@vue/cli-plugin-eslint", "virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:5.0.8"],\
-            ["@vue/eslint-config-prettier", "virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:7.1.0"],\
             ["@vueuse/core", "npm:9.13.0"],\
             ["add", "npm:2.0.6"],\
             ["eslint", "npm:8.35.0"],\
@@ -1248,34 +1247,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@vue-devtools-api-npm-6.5.0-0dc0468299-ec819ef3a4.zip/node_modules/@vue/devtools-api/",\
           "packageDependencies": [\
             ["@vue/devtools-api", "npm:6.5.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@vue/eslint-config-prettier", [\
-        ["npm:7.1.0", {\
-          "packageLocation": "./.yarn/cache/@vue-eslint-config-prettier-npm-7.1.0-a4ecbd76f9-d6de465bcc.zip/node_modules/@vue/eslint-config-prettier/",\
-          "packageDependencies": [\
-            ["@vue/eslint-config-prettier", "npm:7.1.0"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:7.1.0", {\
-          "packageLocation": "./.yarn/__virtual__/@vue-eslint-config-prettier-virtual-bae973ef26/0/cache/@vue-eslint-config-prettier-npm-7.1.0-a4ecbd76f9-d6de465bcc.zip/node_modules/@vue/eslint-config-prettier/",\
-          "packageDependencies": [\
-            ["@vue/eslint-config-prettier", "virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:7.1.0"],\
-            ["@types/eslint", null],\
-            ["@types/prettier", null],\
-            ["eslint", "npm:8.35.0"],\
-            ["eslint-config-prettier", "virtual:bae973ef261cbbfaa64cf1f3502aa2e12bb1be799d99cab05574aeb1afd8f64b1315631efa717b6c2199691dbc0363079e7324a8981e1bd3b3cafd270c1b4b44#npm:8.7.0"],\
-            ["eslint-plugin-prettier", "virtual:bae973ef261cbbfaa64cf1f3502aa2e12bb1be799d99cab05574aeb1afd8f64b1315631efa717b6c2199691dbc0363079e7324a8981e1bd3b3cafd270c1b4b44#npm:4.2.1"],\
-            ["prettier", "npm:2.8.4"]\
-          ],\
-          "packagePeers": [\
-            "@types/eslint",\
-            "@types/prettier",\
-            "eslint",\
-            "prettier"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2904,28 +2875,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["eslint-config-prettier", [\
-        ["npm:8.7.0", {\
-          "packageLocation": "./.yarn/cache/eslint-config-prettier-npm-8.7.0-9cfc221aac-b05bc7f229.zip/node_modules/eslint-config-prettier/",\
-          "packageDependencies": [\
-            ["eslint-config-prettier", "npm:8.7.0"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:bae973ef261cbbfaa64cf1f3502aa2e12bb1be799d99cab05574aeb1afd8f64b1315631efa717b6c2199691dbc0363079e7324a8981e1bd3b3cafd270c1b4b44#npm:8.7.0", {\
-          "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-d430a8e072/0/cache/eslint-config-prettier-npm-8.7.0-9cfc221aac-b05bc7f229.zip/node_modules/eslint-config-prettier/",\
-          "packageDependencies": [\
-            ["eslint-config-prettier", "virtual:bae973ef261cbbfaa64cf1f3502aa2e12bb1be799d99cab05574aeb1afd8f64b1315631efa717b6c2199691dbc0363079e7324a8981e1bd3b3cafd270c1b4b44#npm:8.7.0"],\
-            ["@types/eslint", null],\
-            ["eslint", "npm:8.35.0"]\
-          ],\
-          "packagePeers": [\
-            "@types/eslint",\
-            "eslint"\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["eslint-plugin-prettier", [\
         ["npm:4.2.1", {\
           "packageLocation": "./.yarn/cache/eslint-plugin-prettier-npm-4.2.1-ba8e1240f1-b9e839d233.zip/node_modules/eslint-plugin-prettier/",\
@@ -2933,28 +2882,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "npm:4.2.1"]\
           ],\
           "linkType": "SOFT"\
-        }],\
-        ["virtual:bae973ef261cbbfaa64cf1f3502aa2e12bb1be799d99cab05574aeb1afd8f64b1315631efa717b6c2199691dbc0363079e7324a8981e1bd3b3cafd270c1b4b44#npm:4.2.1", {\
-          "packageLocation": "./.yarn/__virtual__/eslint-plugin-prettier-virtual-519b2dabda/0/cache/eslint-plugin-prettier-npm-4.2.1-ba8e1240f1-b9e839d233.zip/node_modules/eslint-plugin-prettier/",\
-          "packageDependencies": [\
-            ["eslint-plugin-prettier", "virtual:bae973ef261cbbfaa64cf1f3502aa2e12bb1be799d99cab05574aeb1afd8f64b1315631efa717b6c2199691dbc0363079e7324a8981e1bd3b3cafd270c1b4b44#npm:4.2.1"],\
-            ["@types/eslint", null],\
-            ["@types/eslint-config-prettier", null],\
-            ["@types/prettier", null],\
-            ["eslint", "npm:8.35.0"],\
-            ["eslint-config-prettier", "virtual:bae973ef261cbbfaa64cf1f3502aa2e12bb1be799d99cab05574aeb1afd8f64b1315631efa717b6c2199691dbc0363079e7324a8981e1bd3b3cafd270c1b4b44#npm:8.7.0"],\
-            ["prettier", "npm:2.8.4"],\
-            ["prettier-linter-helpers", "npm:1.0.0"]\
-          ],\
-          "packagePeers": [\
-            "@types/eslint-config-prettier",\
-            "@types/eslint",\
-            "@types/prettier",\
-            "eslint-config-prettier",\
-            "eslint",\
-            "prettier"\
-          ],\
-          "linkType": "HARD"\
         }],\
         ["virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:4.2.1", {\
           "packageLocation": "./.yarn/__virtual__/eslint-plugin-prettier-virtual-8f2a31c43f/0/cache/eslint-plugin-prettier-npm-4.2.1-ba8e1240f1-b9e839d233.zip/node_modules/eslint-plugin-prettier/",\
@@ -6733,7 +6660,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@formkit/auto-animate", "virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:1.0.0-pre-alpha.3"],\
             ["@vitejs/plugin-vue", "virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:4.0.0"],\
             ["@vue/cli-plugin-eslint", "virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:5.0.8"],\
-            ["@vue/eslint-config-prettier", "virtual:bd4cfc9b8fa5fc129ee03dc15e65b484c4c87b7560c3570d090918226f1bbbe028f5e1a9a621d7db31a525fcfcdd2935437c24e82c12ec3d124707867436ff4f#npm:7.1.0"],\
             ["@vueuse/core", "npm:9.13.0"],\
             ["add", "npm:2.0.6"],\
             ["eslint", "npm:8.35.0"],\
