@@ -15,18 +15,18 @@ import Todolist from '@/components/TodoList.vue'
           class="py-1"
         >
           <input
+            @click="toggleTodo(todo.id)"
             :value="todo.done"
             class="accent-green-600"
             type="checkbox"
-            @click="toggleTodo(todo.id)"
           >
           {{ todo.title }}
         </li>
 
         <li class="py-1">
           <form
-            class="indent-[17.5]"
             @submit.prevent="addTodo"
+            class="indent-[17.5]"
           >
             <input
               id="title"
@@ -50,17 +50,17 @@ import Todolist from '@/components/TodoList.vue'
         <li
           v-for="todo in todos"
           :key="todo.title"
+          @click="toggleTodo(todo.id)"
           :class="{ 'border-green text-green': todo.done }"
           class="col-span-4 p-8 text-center border-2 rounded cursor-pointer"
-          @click="toggleTodo(todo.id)"
         >
           {{ todo.title }}
         </li>
 
         <li class="py-1">
           <form
-            class="col-span-4 p-8 border-2 border-dashed rounded"
             @submit.prevent="addTodo"
+            class="col-span-4 p-8 border-2 border-dashed rounded"
           >
             <input
               id="title"
