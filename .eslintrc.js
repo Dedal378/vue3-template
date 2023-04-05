@@ -23,62 +23,6 @@ module.exports = {
     'vue/require-default-prop': 'off', //требовать для props дефолтных значений, кроме Boolean значений
     // 'vue/no-v-html': 'off', //предупреждения о возможной уязвимости посредством XSS атаки
     'max-len': ['off', { code: 120 }],
-    'vue/attributes-order': ['error', {
-      order: [
-        'DEFINITION',
-        'LIST_RENDERING',
-        'CONDITIONALS',
-        'RENDER_MODIFIERS',
-        'GLOBAL',
-        ['UNIQUE', 'SLOT'],
-        'TWO_WAY_BINDING',
-        'EVENTS',
-        'OTHER_DIRECTIVES',
-        'OTHER_ATTR',
-        'CONTENT'
-      ],
-      alphabetical: false,
-    }],
-    'vue/html-self-closing': ['error', {
-      html: {
-        void: 'never',
-        normal: 'any',
-        component: 'any',
-      },
-      svg: 'always',
-      math: 'always',
-    }],
-    'vue/max-attributes-per-line': [
-      'error',
-      {
-        singleline: {
-          max: 1,
-        },
-        multiline: {
-          max: 1,
-        },
-      }
-    ],
-    'vue/html-indent': [
-      'warn',
-      2,
-      {
-        attribute: 1,
-        baseIndent: 1,
-        closeBracket: 0,
-        alignAttributesVertically: false,
-        ignores: [],
-      }
-    ],
-    'vue/no-irregular-whitespace': ['error', {
-      skipStrings: true,
-      skipComments: false,
-      skipRegExps: false,
-      skipTemplates: false,
-      skipHTMLAttributeValues: false,
-      skipHTMLTextContents: false,
-    }],
-    'vue/component-definition-name-casing': ['error', 'PascalCase'],
     'vue/order-in-components': ['error', {
       order: [
         'el',
@@ -116,17 +60,76 @@ module.exports = {
         'renderError'
       ],
     }],
+    'vue/attributes-order': ['error', {
+      order: [
+        'DEFINITION',
+        'LIST_RENDERING',
+        'CONDITIONALS',
+        'RENDER_MODIFIERS',
+        'GLOBAL',
+        ['UNIQUE', 'SLOT'],
+        'TWO_WAY_BINDING',
+        'EVENTS',
+        'OTHER_DIRECTIVES',
+        'OTHER_ATTR',
+        'CONTENT'
+      ],
+      alphabetical: false,
+    }],
+    'vue/max-attributes-per-line': ['error', {
+      singleline: { max: 1 },
+      multiline: { max: 1 },
+    }],
+    'vue/html-indent': ['warn', 2, {
+      attribute: 1,
+      baseIndent: 1,
+      closeBracket: 0,
+      alignAttributesVertically: false,
+      ignores: [],
+    }],
+    'vue/html-self-closing': ['error', {
+      html: {
+        void: 'never',
+        normal: 'any',
+        component: 'any',
+      },
+      svg: 'always',
+      math: 'always',
+    }],
+    'vue/html-closing-bracket-newline': ['error', {
+      singleline: 'never',
+      multiline: 'always'
+    }],
+    'vue/html-closing-bracket-spacing': ['warn', {
+      startTag: 'never',
+      endTag: 'never',
+      selfClosingTag: 'always'
+    }],
+    'vue/html-quotes': ['error', 'double', { avoidEscape: false }],
+    'vue/no-irregular-whitespace': ['error', {
+      skipStrings: true,
+      skipComments: false,
+      skipRegExps: false,
+      skipTemplates: false,
+      skipHTMLAttributeValues: false,
+      skipHTMLTextContents: false,
+    }],
+    'vue/component-definition-name-casing': ['error', 'PascalCase'],
     'vue/no-dupe-keys': ['error', {
       groups: [],
     }],
     'no-plusplus': 'off', // запрещает унарные операторы ++ и --
     'vue/no-unused-vars': 'warn',
-    'vue/html-closing-bracket-newline': ['warn', {
-      'singleline': 'never',
-      'multiline': 'always'
-    }],
     semi: ['warn', 'never'], // точка с запятой в конце строки
     quotes: ['warn', 'single'], // одинарные кавычки
+    indent: ['warn', 2, {
+      SwitchCase: 1,
+      VariableDeclarator: 'first',
+      MemberExpression: 1,
+      CallExpression: { arguments: 1 },
+      ArrayExpression: 1,
+      ObjectExpression: 1
+    }],
     // висячие запятые
     'comma-dangle': ['warn', {
       arrays: 'never',
@@ -149,14 +152,6 @@ module.exports = {
     'arrow-spacing': 'warn', // пробелы в () =>
     'arrow-parens': ['warn', 'always'], // скобки в стрелочной функции ['as-needed']
     'linebreak-style': ['warn', 'unix'], //стиль разрыва строки linebreak-style: ["error", "unix || windows"]
-    indent: ['warn', 2, {
-      'SwitchCase': 1,
-      'VariableDeclarator': 'first',
-      'MemberExpression': 1,
-      'CallExpression': { 'arguments': 1 },
-      'ArrayExpression': 1,
-      'ObjectExpression': 1
-    }]
   },
   settings: {
     'import/resolver': {
