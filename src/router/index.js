@@ -20,7 +20,7 @@ const router = createRouter({
       path: '/renderless',
       name: 'renderless',
       component: () => import('@/views/RenderlessView.vue'),
-    },
+    }
   ],
 })
 
