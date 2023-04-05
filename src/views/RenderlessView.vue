@@ -39,7 +39,7 @@ import Todolist from '@/components/TodoList.vue'
         </li>
       </ul>
     </Todolist>
-    <br >
+    <br>
 
     Example 2
     <Todolist v-slot="{ todos, toggleTodo, addTodo }">
