@@ -3,12 +3,11 @@ import Todolist from '@/components/TodoList.vue'
 </script>
 
 <template>
-  <div class="about">
-    <h1>This is an renderless component page</h1>
-
-    Example 1
+  <div class="about flex">
     <Todolist v-slot="{ todos, toggleTodo, addTodo }">
-      <ul>
+      <ul class="max-w-min mt-16">
+        <h2 class="bg-teal5:10 mb-4">Example 1</h2>
+
         <li
           v-for="todo in todos"
           :key="todo.title"
@@ -39,20 +38,20 @@ import Todolist from '@/components/TodoList.vue'
         </li>
       </ul>
     </Todolist>
-    <br>
 
-    Example 2
     <Todolist v-slot="{ todos, toggleTodo, addTodo }">
       <ul
         ref="list"
-        class="grid grid-cols-12 gap-8 mt-16"
+        class="grid auto-cols-max gap-4 mt-16"
       >
+        <h2 class="bg-teal5:10">Example 2</h2>
+
         <li
           v-for="todo in todos"
           :key="todo.title"
           @click="toggleTodo(todo.id)"
           :class="{ 'border-green text-green': todo.done }"
-          class="col-span-4 p-8 text-center border-2 rounded cursor-pointer"
+          class="p-3 text-center border-2 rounded cursor-pointer"
         >
           {{ todo.title }}
         </li>
@@ -60,7 +59,7 @@ import Todolist from '@/components/TodoList.vue'
         <li class="py-1">
           <form
             @submit.prevent="addTodo"
-            class="col-span-4 p-8 border-2 border-dashed rounded"
+            class="p-3 border-2 border-dashed rounded"
           >
             <input
               id="title"

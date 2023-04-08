@@ -25,9 +25,9 @@ import HelloWorld from '@/components/HelloWorld.vue'
         </RouterLink>
         <RouterLink
           rel="noopener noreferrer nofollow"
-          to="/about"
+          to="/error"
         >
-          About
+          Showing Loading & Error
         </RouterLink>
         <RouterLink
           rel="noopener noreferrer nofollow"
@@ -39,7 +39,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <RouterView class="grid place-content-center min-h-100px mt-6" />
 </template>
 
 <style lang="scss">
@@ -92,10 +92,15 @@ nav {
   }
 }
 
+.view {
+  display: grid;
+  grid-auto-columns: auto;
+  place-content: center;
+}
+
 .router-link-exact-active {
   color: var(--color-accent);
 }
-
 .router-link-exact-active:hover {
   background-color: transparent;
 }
