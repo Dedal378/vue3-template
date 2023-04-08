@@ -43,15 +43,6 @@ import HelloWorld from '@/components/HelloWorld.vue'
 </template>
 
 <style lang="scss">
-@import './assets/base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
 header {
   max-height: 100vh;
   line-height: 1.5;
@@ -60,19 +51,6 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
-}
-
-a,
-.green {
-  color: var(--color-link);
-  text-decoration: none;
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
 }
 
 nav {
@@ -92,25 +70,7 @@ nav {
   }
 }
 
-.router-link-exact-active {
-  color: var(--color-accent);
-}
-.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
   header {
     display: flex;
     padding-right: calc(var(--section-gap) / 2);
