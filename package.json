@@ -19,11 +19,14 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/eslint-config-prettier": "^7.1.0",
     "eslint": "8.37.0",
     "eslint-plugin-vue": "^9.10.0",
     "jsdom": "^21.1.1",
+    "prettier": "^2.8.4",
     "sass": "^1.60.0",
     "sass-loader": "^13.2.2",
     "unocss": "^0.50.6",
