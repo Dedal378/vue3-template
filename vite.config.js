@@ -9,12 +9,14 @@ export default defineConfig({
     vue({ reactivityTransform: true }),
     UnoCSS({ configFile: './uno.config.js' })
   ],
-  define: { 'process.env': {}},
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
     extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
   },
-  server: { port: 3000 },
-  // change name to your repo name " base: '/REPO/' "
+  define: { 'process.env': {}},
+  server: {
+    port: 3000,
+    strictPort: true
+  },
   base: '/vue3-template/',
 })
