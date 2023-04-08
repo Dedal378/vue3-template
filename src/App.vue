@@ -92,12 +92,6 @@ nav {
   }
 }
 
-.view {
-  display: grid;
-  grid-auto-columns: auto;
-  place-content: center;
-}
-
 .router-link-exact-active {
   color: var(--color-accent);
 }
