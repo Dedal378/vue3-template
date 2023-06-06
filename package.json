@@ -31,7 +31,7 @@
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2",
     "unocss": "^0.51.12",
-    "vite": "^4.3.5",
+    "vite": "^4.3.9",
     "vitest": "^0.31.0",
     "yarn-upgrade-all": "^0.7.2"
   },
